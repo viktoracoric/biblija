@@ -1,47 +1,45 @@
-# kjv
+# biblija
 
-Read the Word of God from your terminal
+Čitajte Bibliju (prijevod Kršćanske sadašnjosti, uključuje i apokrife) u terminalu.
 
-Forked from [https://github.com/bontibon/kjv.git](https://github.com/bontibon/kjv.git) but with the Apocrypha added.
+Forkano od [https://github.com/LukeSmithxyz/kjv](https://github.com/LukeSmithxyz/kjv).
 
 
-## Usage
+## Korištenje
 
-    usage: ./kjv [flags] [reference...]
+    usage: ./biblija [zastavice] [reference...]
 
-      -l      list books
-      -W      no line wrap
-      -h      show help
+      -l      popis knjiga
+      -W      bez prelamanja redaka
+      -h      pomoć
 
       Reference types:
-          <Book>
-              Individual book
-          <Book>:<Chapter>
-              Individual chapter of a book
-          <Book>:<Chapter>:<Verse>[,<Verse>]...
-              Individual verse(s) of a specific chapter of a book
-          <Book>:<Chapter>-<Chapter>
-              Range of chapters in a book
-          <Book>:<Chapter>:<Verse>-<Verse>
-              Range of verses in a book chapter
-          <Book>:<Chapter>:<Verse>-<Chapter>:<Verse>
-              Range of chapters and verses in a book
+          <Knjiga>
+              Individualna knjiga
+          <Knjiga>:<Poglavlje>
+              Individualno poglavlje neke knjige
+          <Knjiga>:<Poglavlje>:<Stih>[,<Stih>]...
+              Individualni stih(ovi) nekog poglavlja neke knjige
+          <Knjiga>:<Poglavlje>-<Poglavlje>
+              Od-do poglavlja neke knjige.
+          <Knjiga>:<Poglavlje>:<Stih>-<Stih>
+              Od-do stiha nekog poglavlja neke knjige.
+          <Knjiga>:<Poglavlje>:<Stih>-<Poglavlje>:<Stih>
+              Od stiha iz nekog poglavlja do stiha iz nekog drugog poglavlja
 
-          /<Search>
-              All verses that match a pattern
-          <Book>/<Search>
-              All verses in a book that match a pattern
-          <Book>:<Chapter>/<Search>
-              All verses in a chapter of a book that match a pattern
+          /<Pojam za pretraživanje>
+              Svi stihovi koji sadrže pojam za pretraživanje
+          <Knjiga>/<Pojam za pretraživanje>
+              Svi stihovi unutar neke knjige koji sadrže pojam za pretraživanje
+          <Knjiga>:<Poglavlje>/<Pojam za pretraživanje>
+              Svi stihovi unutar nekog poglavlja neke knjige koji sadrže pojam za pretraživanje
 
-## Build
+## Instalacija
 
-kjv can be built by cloning the repository and then running make:
-
-    git clone https://github.com/lukesmithxyz/kjv.git
-    cd kjv
+    git clone https://github.com/viktoracoric/biblija.git
+    cd biblija
     sudo make install
 
-## License
+## Licenca
 
-Public domain
+Javna domena
