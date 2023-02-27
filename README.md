@@ -7,13 +7,13 @@ Forkano od [https://github.com/LukeSmithxyz/kjv](https://github.com/LukeSmithxyz
 
 ## Korištenje
 
-    usage: ./biblija [zastavice] [reference...]
+    korištenje: ./biblija [zastavice] [reference...]
 
       -l      popis knjiga
       -W      bez prelamanja redaka
       -h      pomoć
 
-      Reference types:
+      Tipovi referenci:
           <Knjiga>
               Individualna knjiga
           <Knjiga>:<Poglavlje>
@@ -39,6 +39,24 @@ Forkano od [https://github.com/LukeSmithxyz/kjv](https://github.com/LukeSmithxyz
     git clone https://github.com/viktoracoric/biblija.git
     cd biblija
     sudo make install
+
+## Arch User Repository
+
+`biblija` je korisnicima Arch Linuxa i njegovih derivata dostupna unutar Arch User Repositorya
+
+[https://aur.archlinux.org/packages/biblija](https://aur.archlinux.org/packages/biblija)
+
+Npr., pomoću `yay`-a bibliju može instalirati naredbom
+
+```
+yay biblija
+```
+
+ili pomoću `pamac`-a naredbom
+
+```
+pamac install biblija
+```
 
 ## Licenca
 
